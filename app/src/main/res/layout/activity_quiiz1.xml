@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="16dp"
+        android:text="Quiz1"
+        android:textColor="#88848E"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/res1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="422dp"
+        android:layout_height="301dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/tree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/ques1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="A cette intersection je laisse a prorite a droite :"
+        android:textColor="#6A6767"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton
+            android:id="@+id/oui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="oui"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="504dp" />
+
+        <RadioButton
+            android:id="@+id/non"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="Non"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="552dp" />
+
+        <Button
+            android:id="@+id/nxt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#A19F9F"
+
+            android:text="NEXT"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="618dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            app:srcCompat="@drawable/two" />
+    </RadioGroup>
+
+</LinearLayout>

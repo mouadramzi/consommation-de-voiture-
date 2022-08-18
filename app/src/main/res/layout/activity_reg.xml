@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".reg">
+
+    <ImageView
+        android:id="@+id/two"
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/two" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/purple_200"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/purple_200"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/conPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint=" Confirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/grey"
+        android:text="Register"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/signin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="To sign in click here  "
+        android:textSize="16sp" />
+
+</LinearLayout>

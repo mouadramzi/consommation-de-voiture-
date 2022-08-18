@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/one"
+        android:layout_width="370dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/one" />
+
+    <EditText
+        android:id="@+id/email"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/purple_200"
+        android:ems="10"
+
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint="@color/purple_200"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/black"
+
+        android:backgroundTint="@color/grey"/>
+
+    <TextView
+        android:id="@+id/regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="To register click here "
+        android:textSize="16sp" />
+</LinearLayout>

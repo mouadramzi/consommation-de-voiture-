@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consomation">
+
+    <TextView
+        android:id="@+id/hist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="30dp"
+        android:text="Vu historique click here "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="228dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="199dp"
+            android:layout_weight="1"
+            android:maxWidth="100px"
+            android:maxHeight="200px"
+
+            app:srcCompat="@drawable/consom" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="421dp"
+        android:layout_height="388dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="245dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="93dp"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="44dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.929"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="36dp"
+            android:text="Nom de voiture :"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/spinner"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="276dp"
+            android:text="Nombre de kilomètres "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <com.mohammedalaa.seekbar.RangeSeekBarView
+            android:id="@+id/range_seekbar"
+            android:layout_width="243dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="108dp"
+            app:barHeight="10dp"
+            app:baseColor="@color/yellow"
+            app:circleFillColor="@color/purple_200"
+            app:circleRadius="15dp"
+            app:circleTextColor="@color/white"
+            app:circleTextSize="@dimen/value_bar_circleTextSize"
+            app:currentValue="60"
+            app:fillColor="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxValue="600"
+            app:minValue="20"
+            app:orientation="LEFT_TO_RIGHT"
+            app:stepValue="5" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="272dp"
+            android:text="Nombre de litres : "
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="245dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="4dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/range_seekbar" />
+
+        <Button
+            android:id="@+id/calcul"
+            android:layout_width="142dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="Calculer"
+            app:backgroundTint="@color/purple_500"
+            app:layout_constraintEnd_toStartOf="@+id/enregister"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+        <Button
+            android:id="@+id/enregister"
+            android:layout_width="164dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Enregistrer"
+            app:backgroundTint="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="259dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
